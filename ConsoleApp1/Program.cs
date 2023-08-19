@@ -9,7 +9,7 @@
             {
                 Console.WriteLine("the index is " + i);
             }
-        }
+        
         }
     }
 }
