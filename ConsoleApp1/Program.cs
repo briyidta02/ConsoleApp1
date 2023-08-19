@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using System.Net.NetworkInformation;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -27,12 +29,23 @@
          
             // ejercicio 3
 
-            Console.WriteLine("ingrese base y altura del rectangulo");
+            Console.WriteLine("ingrese la base del rectangulo");
+            string abajo = Console.ReadLine();
+            int area = Int32.Parse(abajo);
+            Console.WriteLine("ingrese la altura del rectangulo");
+            string altura = Console.ReadLine();
+            int variable = Int32.Parse(altura);
 
-            
-           
+            int solucion = area * variable;
+         
+            Console.WriteLine("El area del rectangulo es" + solucion);
 
-            }
+            int perimetro = area * 2 + variable * 2;
+
+            Console.WriteLine("El perimetro del rectangulo es" + perimetro);
+
 
         }
+
+    }
     }
