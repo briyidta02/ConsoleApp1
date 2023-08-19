@@ -4,12 +4,15 @@
     {
         static void Main(string[] args)
         {
-            //Comment
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine("the index is " + i);
+
+        //comment
+            
+                Console.WriteLine("ingrese un numero");
+            string input = Console.ReadLine();
+            int a = Int32.Parse(input);
+            Console.WriteLine( a + 1);
+  
             }
         
         }
     }
-}
