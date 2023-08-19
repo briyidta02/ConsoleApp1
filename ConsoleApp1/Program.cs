@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
 
-        //comment
+        //ejercicio 1
             
                 Console.WriteLine("ingrese un numero");
             string input = Console.ReadLine();
