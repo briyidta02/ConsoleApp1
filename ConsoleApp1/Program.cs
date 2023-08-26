@@ -107,7 +107,7 @@ namespace ConsoleApp1
             }
             double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
             Console.WriteLine("el algoritmo de un cilindro es" + volumen);
-               */
+               
             // ejercicio 8 
 
             Console.WriteLine("ingrese un primer numero");
@@ -124,12 +124,29 @@ namespace ConsoleApp1
             }else {
                 Console.WriteLine("no es divisible");
             }
+            */
+            // ejercicio 9
+
+            Console.WriteLine("ingrese cantidad de mujeres");
+            string cantidadmujeres = Console.ReadLine();
+            int totalmujeres = Int32.Parse(cantidadmujeres);
+            Console.WriteLine("ingrese cantidad de hombres");
+            string cantidadhombres = Console.ReadLine();
+            int totalhombres = Int32.Parse(cantidadhombres);
+
+            double totalgrupo = totalmujeres + totalhombres;
+
+            double porcentajemujeres = (totalmujeres / totalgrupo) * 100;
+            double porcentajehombres = (totalhombres / totalgrupo) * 100;
 
 
+            Console.WriteLine("porcentaje grupo de mujeres" + porcentajemujeres);
+            Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
 
 
         }
     }
+
 }
 
     
