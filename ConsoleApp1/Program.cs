@@ -75,7 +75,7 @@ namespace ConsoleApp1
             Console.WriteLine("centimetros a pies" + pies);
             Console.WriteLine("centimetros a pulgadas" + pulgadas);
 
-             */
+            
             // ejercicio 6
             Console.WriteLine("ingrese temperatura en celsius");
             string temperatura = Console.ReadLine();
@@ -84,10 +84,32 @@ namespace ConsoleApp1
             double farenheir = (celsius * 1.8) + 32;
             Console.WriteLine("temperatura farenheit" + farenheir);
 
+            */
+            // ejercicio 7 
 
 
+
+            Console.WriteLine("ingrese el radio de un cilindro");
+            string circulo = Console.ReadLine();
+            Console.WriteLine("ingrese la altura de un cilindro");
+            string alturaejercicio = Console.ReadLine();
+            int respuesta = Int32.Parse(circulo);
+            int definitiva = Int32.Parse(alturaejercicio);
+            
+            if (respuesta > 0 || definitiva > 0)
+            {
+                Console.WriteLine("es positivo");
+            }
+            else
+            {
+
+                Console.WriteLine("es negativo");
+            }
+            double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
+            Console.WriteLine("el algoritmo de un cilindro es" + volumen);
 
         }
+    }
+}
 
-    }
-    }
+    
