@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
+            /*
         //ejercicio 1
             
                 Console.WriteLine("ingrese un numero");
@@ -43,6 +43,21 @@ namespace ConsoleApp1
             int perimetro = area * 2 + variable * 2;
 
             Console.WriteLine("El perimetro del rectangulo es" + perimetro);
+
+            */
+        
+            // ejercicio 4 
+
+           
+            Console.WriteLine("ingrese el radio de un cilindro");
+            string circulo= Console.ReadLine();
+           Console.WriteLine("ingrese la altura de un cilindro");
+            string alturaejercicio = Console.ReadLine();
+            int respuesta = Int32.Parse(circulo);
+            int definitiva = Int32.Parse(alturaejercicio);
+            double volumen = Math.PI * (Math.Pow(respuesta,2) * definitiva);
+            Console.WriteLine("el algoritmo de un cilindro es" + volumen);
+
 
 
         }
