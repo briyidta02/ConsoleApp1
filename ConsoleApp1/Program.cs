@@ -58,7 +58,7 @@ namespace ConsoleApp1
             int definitiva = Int32.Parse(alturaejercicio);
             double volumen = Math.PI * (Math.Pow(respuesta,2) * definitiva);
             Console.WriteLine("el algoritmo de un cilindro es" + volumen);
-            */
+            
             // ejercicio 5 
 
 
@@ -75,7 +75,14 @@ namespace ConsoleApp1
             Console.WriteLine("centimetros a pies" + pies);
             Console.WriteLine("centimetros a pulgadas" + pulgadas);
 
+             */
+            // ejercicio 6
+            Console.WriteLine("ingrese temperatura en celsius");
+            string temperatura = Console.ReadLine();
+            int celsius = Int32.Parse(temperatura);
 
+            double farenheir = (celsius * 1.8) + 32;
+            Console.WriteLine("temperatura farenheit" + farenheir);
 
 
 
