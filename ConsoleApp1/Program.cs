@@ -84,7 +84,7 @@ namespace ConsoleApp1
             double farenheir = (celsius * 1.8) + 32;
             Console.WriteLine("temperatura farenheit" + farenheir);
 
-            */
+         
             // ejercicio 7 
 
 
@@ -107,6 +107,26 @@ namespace ConsoleApp1
             }
             double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
             Console.WriteLine("el algoritmo de un cilindro es" + volumen);
+               */
+            // ejercicio 8 
+
+            Console.WriteLine("ingrese un primer numero");
+            string numerouno = Console.ReadLine();
+            int divisibleuno = Int32.Parse(numerouno);
+            Console.WriteLine("ingrese un primer numero");
+            string numerodos = Console.ReadLine();
+            int divisibledos = Int32.Parse(numerodos);
+
+
+            if (divisibledos % divisibleuno == 0 )
+                    {
+                Console.WriteLine("es divisible");
+            }else {
+                Console.WriteLine("no es divisible");
+            }
+
+
+
 
         }
     }
