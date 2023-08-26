@@ -1,4 +1,5 @@
-﻿using System.Net.NetworkInformation;
+﻿using System;
+using System.Net.NetworkInformation;
 
 namespace ConsoleApp1
 {
@@ -44,7 +45,7 @@ namespace ConsoleApp1
 
             Console.WriteLine("El perimetro del rectangulo es" + perimetro);
 
-            */
+          
         
             // ejercicio 4 
 
@@ -57,6 +58,25 @@ namespace ConsoleApp1
             int definitiva = Int32.Parse(alturaejercicio);
             double volumen = Math.PI * (Math.Pow(respuesta,2) * definitiva);
             Console.WriteLine("el algoritmo de un cilindro es" + volumen);
+            */
+            // ejercicio 5 
+
+
+            Console.WriteLine("ingrese valor ingresado en centimetros");
+            string valor = Console.ReadLine();
+            int centimetros = Int32.Parse(valor);
+            double metros = centimetros * 0.01;
+            double yardas = centimetros * 0.0109;
+            double pies = centimetros * 0.032;
+            double pulgadas = centimetros * 0.393;
+
+            Console.WriteLine("centimetros a metros" + metros);
+            Console.WriteLine("centimetros a yardas"  + yardas);
+            Console.WriteLine("centimetros a pies" + pies);
+            Console.WriteLine("centimetros a pulgadas" + pulgadas);
+
+
+
 
 
 
