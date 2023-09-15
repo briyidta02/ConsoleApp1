@@ -8,12 +8,14 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             /*
+            Console.WriteLine("4 radioCilindro!");
+            Console.WriteLine("6 Add Temperatura");
+                    Console.WriteLine($"the resultado is {resultado}");
+                    Console.WriteLine("El volumen es " + volumen);
+                    break;
         //ejercicio 1
             
-                Console.WriteLine("ingrese un numero");
-            string input = Console.ReadLine();
-            int a = Int32.Parse(input);
-            Console.WriteLine( a + 1);
+        }
 
            //ejercicio 2
 
