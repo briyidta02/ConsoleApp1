@@ -16,6 +16,7 @@ namespace ConsoleApp1
             Console.WriteLine("7.  Volumen ");
             Console.WriteLine("8.  Numero Divisible");
             Console.WriteLine("9. totalporcentajes");
+            Console.WriteLine("10. IdentifyTriangle");
             string userResponse = Console.ReadLine();
 
             switch (userResponse)
@@ -61,6 +62,10 @@ namespace ConsoleApp1
         Console.WriteLine("porcentaje grupo de mujeres" + porcentajemujeres);
        Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
                     break;
+            case "10":
+            string triangleResult = identifyTriangle();
+            Console.WriteLine($"The triangulo is [triangleResult]");
+            break;
             }
 
 }
@@ -200,8 +205,9 @@ public static double AddConvcersion()
     }
     double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
     Console.WriteLine("el algoritmo de un cilindro es" + volumen);
+    return volumen;
 }
-public static int NumeroDivisible()
+public static string NumeroDivisible()
 {
     // ejercicio 8 
 
@@ -219,6 +225,7 @@ public static int NumeroDivisible()
     } else {
         Console.WriteLine("no es divisible");
     }
+    return NumeroDivisible;
 }
 
 
@@ -265,8 +272,7 @@ if (lado1 != lado2 && lado2 != lado3)
     triangleResult = "Es un triangulo escaleno";
         }
 if ((lado1 != lado2 && lado2 != lado3)) || (lado1 == lado3 && !lado3 !=lado2) ||(lado2 == lado3 && lado3 != lado1))
-    {
-
+ {
     triangleResult = "Es un triangulo isoceles";
 }
 if (lado1 == lado2 && lado2 == lado3)
