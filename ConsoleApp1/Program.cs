@@ -216,7 +216,7 @@ public static int NumeroDivisible()
 }
 
 
-           Private static void doble totalporcentajes ()
+           public static void doble totalporcentajes ()
     {
     // ejercicio 9
 
