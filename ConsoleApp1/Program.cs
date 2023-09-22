@@ -54,11 +54,11 @@ namespace ConsoleApp1
         Console.WriteLine(" el algoritmo de un cilindro es " + volumen);
                     break;
              case "8":
-         
-        Console.WriteLine(" el algoritmo de un cilindro es " + volumen);
+    string NumeroDivisible = NumeroDivisible();
+        Console.WriteLine($"el numero divisible es [NumeroDivisible]");
                     break;
                    case "9":
-     double totalporcentajes = totalporcentajes();
+       double totalporcentajes = totalporcentajes();
         Console.WriteLine("porcentaje grupo de mujeres" + porcentajemujeres);
        Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
                     break;
