@@ -14,6 +14,7 @@ namespace ConsoleApp1
             Console.WriteLine("5. Add Conversion");
             Console.WriteLine("6. Add Temperature ");
             Console.WriteLine("7.  Volumen ");
+            Console.WriteLine("8.  Numero Divisible");
             string userResponse = Console.ReadLine();
 
             switch (userResponse)
@@ -48,6 +49,10 @@ namespace ConsoleApp1
                     break;
                  case "7":
      double volumen = Volumen();
+        Console.WriteLine(" el algoritmo de un cilindro es " + volumen);
+                    break;
+             case "8":
+         
         Console.WriteLine(" el algoritmo de un cilindro es " + volumen);
                     break;
             }
@@ -190,23 +195,27 @@ public static double AddConvcersion()
     double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
     Console.WriteLine("el algoritmo de un cilindro es" + volumen);
 }
+public static int NumeroDivisible()
+{
+    // ejercicio 8 
 
-                    // ejercicio 8 
-
-                    Console.WriteLine("ingrese un primer numero");
-                    string numerouno = Console.ReadLine();
-                    int divisibleuno = Int32.Parse(numerouno);
-                    Console.WriteLine("ingrese un segundo numero");
-                    string numerodos = Console.ReadLine();
-                    int divisibledos = Int32.Parse(numerodos);
+    Console.WriteLine("ingrese un primer numero");
+    string numerouno = Console.ReadLine();
+    int divisibleuno = Int32.Parse(numerouno);
+    Console.WriteLine("ingrese un segundo numero");
+    string numerodos = Console.ReadLine();
+    int divisibledos = Int32.Parse(numerodos);
 
 
-                    if (divisibledos % divisibleuno == 0 )
-                            {
-                        Console.WriteLine("es divisible");
-                    }else {
-                        Console.WriteLine("no es divisible");
-                    }
+    if (divisibledos % divisibleuno == 0)
+    {
+        Console.WriteLine("es divisible");
+    } else {
+        Console.WriteLine("no es divisible");
+    }
+}
+
+
            Private static void doble totalporcentajes ()
     {
     // ejercicio 9
@@ -227,9 +236,39 @@ public static double AddConvcersion()
     Console.WriteLine("porcentaje grupo de mujeres" + porcentajemujeres);
     Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
 }
-*//
+// ejercicio 10
+
+public static string IdentifyTriangle()
+{ 
+    string triangleResult = "";
+
+Console.WriteLine("ingrese el valor del lado 1");
+string input9 = Console.ReadLine();
+float lado1 = float.Parse(input9);
+Console.WriteLine("ingrese el valor del lado 2");
+string input10 = Console.ReadLine();
+float lado2 = float.Parse(input10);
+Console.WriteLine("ingrese el valor del lado 3");
+string input11 = Console.ReadLine();
+float lado3 = float.Parse(input11);
+
+
+if (lado1 != lado2 && lado2 != lado3)
+{
+    triangleResult = "Es un triangulo escaleno";
         }
-    }
+if ((lado1 != lado2 && lado2 != lado3)) || (lado1 == lado3 && !lado3 !=lado2) ||(lado2 == lado3 && lado3 != lado1))
+    {
+
+    triangleResult = "Es un triangulo isoceles";
+}
+if (lado1 == lado2 && lado2 == lado3)
+{
+    Console.WriteLine("Es un triangulo Equilatero");
+}
+return triangleResult;
+ 
+}
 
 }
 
