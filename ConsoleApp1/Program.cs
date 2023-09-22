@@ -138,19 +138,6 @@ public static double RadioCilindro()
     return volumen;
 
 }
-public static double AddTemperature()
-{
-
-    // ejercicio 6
-    Console.WriteLine("ingrese temperatura en celsius");
-    string temperatura = Console.ReadLine();
-    int celsius = Int32.Parse(temperatura);
-
-    double farenheir = (celsius * 1.8) + 32;
-    Console.WriteLine("temperatura farenheit" + farenheir);
-    return farenheir;
-}
-
 public static double AddConvcersion()
 {
     // ejercicio 5 
@@ -250,9 +237,11 @@ public static string NumeroDivisible()
     Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
 
 }
-// ejercicio 10
+
 
 public static string IdentifyTriangle()
+
+// ejercicio 10
 { 
     string triangleResult = "";
 
@@ -270,7 +259,7 @@ float lado3 = float.Parse(input11);
 if (lado1 != lado2 && lado2 != lado3)
 {
     triangleResult = "Es un triangulo escaleno";
-        }
+ }
 if ((lado1 != lado2 && lado2 != lado3)) || (lado1 == lado3 && !lado3 !=lado2) ||(lado2 == lado3 && lado3 != lado1))
  {
     triangleResult = "Es un triangulo isoceles";
@@ -280,9 +269,9 @@ if (lado1 == lado2 && lado2 == lado3)
     Console.WriteLine("Es un triangulo Equilatero");
 }
 return triangleResult;
- 
+}
 }
 
-}
+
 
     
