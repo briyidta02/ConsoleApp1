@@ -13,7 +13,7 @@ namespace ConsoleApp1
             Console.WriteLine("4. Radio Cilindro");
             Console.WriteLine("5. Add Conversion");
             Console.WriteLine("6. Add Temperature ");
-          
+            Console.WriteLine("7.  Volumen ");
             string userResponse = Console.ReadLine();
 
             switch (userResponse)
@@ -47,8 +47,8 @@ namespace ConsoleApp1
         Console.WriteLine(" La Temperatura es  " + farenheir);
                     break;
                  case "7":
-     double farenheir = AddTemperature();
-        Console.WriteLine(" La Temperatura es  " + farenheir);
+     double volumen = Volumen();
+        Console.WriteLine(" el algoritmo de un cilindro es " + volumen);
                     break;
             }
 
@@ -136,67 +136,67 @@ public static double AddTemperature()
 }
 
 public static double AddConvcersion()
-{ 
-                    // ejercicio 5 
+{
+    // ejercicio 5 
 
 
-                    Console.WriteLine("ingrese valor ingresado en centimetros");
-                    string valor = Console.ReadLine();
-                    int centimetros = Int32.Parse(valor);
-                    double metros = centimetros * 0.01;
-                    double yardas = centimetros * 0.0109;
-                    double pies = centimetros * 0.032;
-                    double pulgadas = centimetros * 0.393;
+    Console.WriteLine("ingrese valor ingresado en centimetros");
+    string valor = Console.ReadLine();
+    int centimetros = Int32.Parse(valor);
+    double metros = centimetros * 0.01;
+    double yardas = centimetros * 0.0109;
+    double pies = centimetros * 0.032;
+    double pulgadas = centimetros * 0.393;
 
-                    Console.WriteLine("centimetros a metros" + metros);
-                    Console.WriteLine("centimetros a yardas"  + yardas);
-                    Console.WriteLine("centimetros a pies" + pies);
-                    Console.WriteLine("centimetros a pulgadas" + pulgadas);
-   
+    Console.WriteLine("centimetros a metros" + metros);
+    Console.WriteLine("centimetros a yardas" + yardas);
+    Console.WriteLine("centimetros a pies" + pies);
+    Console.WriteLine("centimetros a pulgadas" + pulgadas);
 
-                public static double AddTemperature()
+}
+    public static double AddTemperature()
+
+{
+
+    // ejercicio 6
+    Console.WriteLine("ingrese temperatura en celsius");
+    string temperatura = Console.ReadLine();
+    int celsius = Int32.Parse(temperatura);
+
+    double farenheir = (celsius * 1.8) + 32;
+    Console.WriteLine("temperatura farenheit" + farenheir);
+}
+
+          public static double AddVolumen()
+         // ejercicio 7 
+
+{
+    Console.WriteLine("ingrese el radio de un cilindro");
+    string circulo = Console.ReadLine();
+    Console.WriteLine("ingrese la altura de un cilindro");
+    string alturaejercicio = Console.ReadLine();
+    int respuesta = Int32.Parse(circulo);
+    int definitiva = Int32.Parse(alturaejercicio);
+
+    if (respuesta > 0 || definitiva > 0)
+    {
+        Console.WriteLine("es positivo");
+    }
+    else
     {
 
-
-        // ejercicio 6
-        Console.WriteLine("ingrese temperatura en celsius");
-        string temperatura = Console.ReadLine();
-        int celsius = Int32.Parse(temperatura);
-
-        double farenheir = (celsius * 1.8) + 32;
-        Console.WriteLine("temperatura farenheit" + farenheir);
-    } 
-
-        /*
-                    // ejercicio 7 
-
-
-
-                    Console.WriteLine("ingrese el radio de un cilindro");
-                    string circulo = Console.ReadLine();
-                    Console.WriteLine("ingrese la altura de un cilindro");
-                    string alturaejercicio = Console.ReadLine();
-                    int respuesta = Int32.Parse(circulo);
-                    int definitiva = Int32.Parse(alturaejercicio);
-
-                    if (respuesta > 0 || definitiva > 0)
-                    {
-                        Console.WriteLine("es positivo");
-                    }
-                    else
-                    {
-
-                        Console.WriteLine("es negativo");
-                    }
-                    double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
-                    Console.WriteLine("el algoritmo de un cilindro es" + volumen);
+        Console.WriteLine("es negativo");
+    }
+    double volumen = Math.PI * (Math.Pow(respuesta, 2) * definitiva);
+    Console.WriteLine("el algoritmo de un cilindro es" + volumen);
+}
 
                     // ejercicio 8 
 
                     Console.WriteLine("ingrese un primer numero");
                     string numerouno = Console.ReadLine();
                     int divisibleuno = Int32.Parse(numerouno);
-                    Console.WriteLine("ingrese un primer numero");
+                    Console.WriteLine("ingrese un segundo numero");
                     string numerodos = Console.ReadLine();
                     int divisibledos = Int32.Parse(numerodos);
 
