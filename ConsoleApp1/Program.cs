@@ -11,6 +11,7 @@ namespace ConsoleApp1
             Console.WriteLine("2. Random Number");
             Console.WriteLine("3. perimeter");
             Console.WriteLine("4. Radio Cilindro");
+            Console.WriteLine("5. Add Conversion");
             Console.WriteLine("6. Add Temperature ");
           
             string userResponse = Console.ReadLine();
@@ -34,11 +35,21 @@ namespace ConsoleApp1
                     double volumen = RadioCilindro();
         Console.WriteLine("El volumen es " + volumen);
                     break;
+                      case "5":
+     double conversion = AddConversion();
+        Console.WriteLine(" Los metros son  " +  metros);
+        Console.WriteLine(" Los metros son  " +  yardas); 
+        Console.WriteLine(" Los metros son  " +  pies);
+        Console.WriteLine(" Los metros son  " +  plgadas);
+                    break;
                 case "6":
      double farenheir = AddTemperature();
         Console.WriteLine(" La Temperatura es  " + farenheir);
                     break;
-              
+                 case "7":
+     double farenheir = AddTemperature();
+        Console.WriteLine(" La Temperatura es  " + farenheir);
+                    break;
             }
 
 }
@@ -123,13 +134,9 @@ public static double AddTemperature()
     Console.WriteLine("temperatura farenheit" + farenheir);
     return farenheir;
 }
-      
 
-    }
-}
-
-
-        /*
+public static double AddConvcersion()
+{ 
                     // ejercicio 5 
 
 
@@ -145,20 +152,22 @@ public static double AddTemperature()
                     Console.WriteLine("centimetros a yardas"  + yardas);
                     Console.WriteLine("centimetros a pies" + pies);
                     Console.WriteLine("centimetros a pulgadas" + pulgadas);
+   
 
                 public static double AddTemperature()
-        {
+    {
 
-            // ejercicio 6
-            Console.WriteLine("ingrese temperatura en celsius");
-            string temperatura = Console.ReadLine();
-            int celsius = Int32.Parse(temperatura);
 
-            double farenheir = (celsius * 1.8) + 32;
-            Console.WriteLine("temperatura farenheit" + farenheir);
-        }
+        // ejercicio 6
+        Console.WriteLine("ingrese temperatura en celsius");
+        string temperatura = Console.ReadLine();
+        int celsius = Int32.Parse(temperatura);
 
-        
+        double farenheir = (celsius * 1.8) + 32;
+        Console.WriteLine("temperatura farenheit" + farenheir);
+    } 
+
+        /*
                     // ejercicio 7 
 
 
@@ -198,7 +207,7 @@ public static double AddTemperature()
                     }else {
                         Console.WriteLine("no es divisible");
                     }
-Private static void doble totalporcentajes ()
+           Private static void doble totalporcentajes ()
     {
     // ejercicio 9
 
