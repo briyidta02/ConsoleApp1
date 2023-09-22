@@ -15,6 +15,7 @@ namespace ConsoleApp1
             Console.WriteLine("6. Add Temperature ");
             Console.WriteLine("7.  Volumen ");
             Console.WriteLine("8.  Numero Divisible");
+            Console.WriteLine("9. totalporcentajes");
             string userResponse = Console.ReadLine();
 
             switch (userResponse)
@@ -54,6 +55,11 @@ namespace ConsoleApp1
              case "8":
          
         Console.WriteLine(" el algoritmo de un cilindro es " + volumen);
+                    break;
+                   case "9":
+     double totalporcentajes = totalporcentajes();
+        Console.WriteLine("porcentaje grupo de mujeres" + porcentajemujeres);
+       Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
                     break;
             }
 
@@ -216,7 +222,7 @@ public static int NumeroDivisible()
 }
 
 
-           public static void doble totalporcentajes ()
+           public static void double totalporcentajes ()
     {
     // ejercicio 9
 
@@ -235,6 +241,7 @@ public static int NumeroDivisible()
 
     Console.WriteLine("porcentaje grupo de mujeres" + porcentajemujeres);
     Console.WriteLine("porcentaje grupo de hombres" + porcentajehombres);
+
 }
 // ejercicio 10
 
